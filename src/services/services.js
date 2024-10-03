@@ -97,6 +97,9 @@ export async function getStatus(trackingNumber, cookies) {
         method: "POST",
       }
     );
+
+    console.log(`trackingNumber: ${trackingNumber} - status: ${res.status}`);
+
     if (!res.ok) {
       throw new Error(
         `Error fetching order status: ${res.status} ${res.statusText}`

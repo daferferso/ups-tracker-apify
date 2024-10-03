@@ -1,9 +1,0 @@
-{
-  "title": "UPS Tracker",
-  "type": "object",
-  "schemaVersion": 1,
-  "properties": {
-    "trackingNumbers": []
-  },
-  "required": ["trackingNumbers"]
-}

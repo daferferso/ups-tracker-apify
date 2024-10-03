@@ -1,0 +1,20 @@
+{
+  "title": "UPS Tracker",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "trackingNumbers": {
+      "title": "UPS Tracking Numbers",
+      "description": "An array of UPS tracking numbers, each consisting of 18 digits.",
+      "editor": "stringList",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z0-9]{18}$"
+      },
+      "maxItems": 20,
+      "example": ["1Z3TWW700331337938"]
+    }
+  },
+  "required": ["trackingNumbers"]
+}
