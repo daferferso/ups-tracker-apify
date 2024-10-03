@@ -1,0 +1,93 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "trackNumber": {
+      "type": "string",
+      "description": "The UPS tracking number."
+    },
+    "result": {
+      "type": "object",
+      "description": "The result of the UPS tracking number query.",
+      "fields": {
+        "statusCode": {
+          "type": "string",
+          "description": "HTTP-like status code indicating success or failure."
+        },
+        "statusText": {
+          "type": "string",
+          "description": "Text description of the tracking status."
+        },
+        "isLoggedInUser": {
+          "type": "boolean",
+          "description": "Indicates whether the user is logged in."
+        },
+        "trackedDateTime": {
+          "type": "string",
+          "description": "Date and time when the tracking information was retrieved."
+        },
+        "trackDetails": {
+          "type": "array",
+          "description": "List of details for the tracking number.",
+          "items": {
+            "type": "object",
+            "fields": {
+              "requestedTrackingNumber": {
+                "type": "string",
+                "description": "The requested tracking number."
+              },
+              "packageStatus": {
+                "type": "string",
+                "description": "Current package status."
+              },
+              "progressBarType": {
+                "type": "string",
+                "description": "Type of progress for the shipment."
+              },
+              "shipToAddress": {
+                "type": "object",
+                "description": "Address to which the package is being shipped.",
+                "fields": {
+                  "city": {
+                    "type": "string",
+                    "description": "City of the shipping destination."
+                  },
+                  "state": {
+                    "type": "string",
+                    "description": "State of the shipping destination."
+                  },
+                  "country": {
+                    "type": "string",
+                    "description": "Country of the shipping destination."
+                  }
+                }
+              },
+              "additionalInformation": {
+                "type": "object",
+                "description": "Additional information about the package."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Overview",
+      "transformation": {},
+      "display": {
+        "component": "table",
+        "properties": {
+          "trackNumber": {
+            "label": "Track Number",
+            "format": "string"
+          },
+          "result": {
+            "label": "Result",
+            "format": "object"
+          }
+        }
+      }
+    }
+  }
+}
