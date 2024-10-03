@@ -7,9 +7,14 @@
   },
   "main": "index.js",
   "scripts": {
+    "start": "node ./src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Fernando Fernandez",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "apify": "^3.2.5"
+  },
+  "type": "module"
 }

@@ -1,15 +1,9 @@
 {
-  "title": "Scrape data from a web page",
+  "title": "UPS Tracker",
   "type": "object",
   "schemaVersion": 1,
   "properties": {
-    "url": {
-      "title": "URL of the page",
-      "type": "string",
-      "description": "The URL of website you want to get the data from.",
-      "editor": "textfield",
-      "prefill": "https://www.apify.com/"
-    }
+    "trackingNumbers": []
   },
-  "required": ["url"]
+  "required": ["trackingNumbers"]
 }

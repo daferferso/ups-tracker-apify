@@ -1,9 +1,9 @@
 {
   "actorSpecification": 1,
-  "name": "my-actor",
-  "title": "Scrape single page in JavaScript",
-  "description": "Scrape data from single page with provided URL.",
-  "version": "0.0",
+  "name": "ups-tracker-apify",
+  "title": "UPS Tracker",
+  "description": "Unofficial UPS Tracker Info API — Retrieve package status, shipping events, and additional details!",
+  "version": "1.0",
   "meta": {
     "templateId": "js-start"
   },
