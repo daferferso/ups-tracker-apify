@@ -1,0 +1,15 @@
+{
+  "name": "ups-tracker-apify",
+  "version": "1.0.0",
+  "description": "UPSTracker is a Node.js service that fetches real-time order status from UPS using tracking numbers.",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Fernando Fernandez",
+  "license": "MIT"
+}
